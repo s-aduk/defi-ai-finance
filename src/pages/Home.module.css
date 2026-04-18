@@ -1,0 +1,149 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2.5rem 1rem 2rem;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(124,58,237,0.14);
+  color: var(--purple-light);
+  border: 0.5px solid rgba(124,58,237,0.3);
+  border-radius: 99px;
+  padding: 4px 16px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.3px;
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 5vw, 38px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.accent { color: var(--purple-light); }
+
+.subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 11px 24px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+.btnPrimary:hover { opacity: 0.85; }
+
+.btnSecondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 0.5px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 11px 24px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.btnSecondary:hover { background: var(--bg-raised); }
+
+/* Features */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin-top: 2.5rem;
+}
+
+.featureCard {
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  transition: border-color var(--transition);
+}
+.featureCard:hover { border-color: var(--border-strong); }
+
+.featureIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+}
+.purple .featureIcon { background: rgba(124,58,237,0.15); color: var(--purple-light); }
+.teal   .featureIcon { background: rgba(20,184,166,0.14); color: var(--teal-light); }
+.amber  .featureIcon { background: rgba(245,158,11,0.14); color: var(--amber-light); }
+.red    .featureIcon { background: rgba(239,68,68,0.12);  color: var(--red-light); }
+
+.featureTitle {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.featureDesc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Stats bar */
+.statsBar {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}

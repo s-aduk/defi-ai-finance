@@ -1,0 +1,130 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 3rem;
+}
+
+.walletInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+}
+
+.walletAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(124,58,237,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.walletLabel { font-size: 13px; font-weight: 500; }
+.walletAddr  { font-size: 11px; color: var(--text-secondary); font-family: var(--font-mono); margin-top: 2px; }
+
+.onlineDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green-light);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.midGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 580px) { .midGrid { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+
+.fullCard { margin-bottom: 0; }
+
+.cardTitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+/* Asset rows */
+.assetRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 0.5px solid var(--border);
+}
+.assetRow:last-child { border-bottom: none; }
+
+.assetLeft { display: flex; align-items: center; gap: 10px; }
+
+.assetIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+.assetName { font-size: 13px; font-weight: 500; }
+.assetSym  { font-size: 11px; color: var(--text-secondary); margin-top: 1px; }
+
+.assetRight { text-align: right; font-size: 13px; }
+
+/* Transactions */
+.txList { display: flex; flex-direction: column; gap: 8px; }
+
+.txItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--bg-raised);
+  border-radius: var(--radius-md);
+}
+
+.txLeft  { display: flex; align-items: center; gap: 10px; }
+
+.txIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.txName { font-size: 13px; font-weight: 500; }
+.txDate { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
